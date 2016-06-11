@@ -1,0 +1,16 @@
+<ion-view view-title="Peer Pressure">
+  <ion-content>   
+    <ion-list>
+      <ion-item ng-repeat="user in users" class="item-remove-animate item-icon-left" type="item-text-wrap">
+
+    			<i class="icon ion-trophy" style="color: gold" ng-if="$index == 0"></i>
+    			<i class="icon ion-ribbon-a" style="color: silver" ng-if="$index == 1"></i>
+    			<i class="icon ion-ribbon-b" style="color: brown" ng-if="$index == 2"></i>
+    			<i class="icon ion-thumbsdown" ng-if="$index >= 3"></i>
+
+        <h2>{{ user.value.name }}</h2>
+        <p>€{{ user.value.total }}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

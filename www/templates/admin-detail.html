@@ -1,0 +1,18 @@
+<ion-view view-title="{{userId}}">
+  <ion-content class="padding">
+    <img ng-src="{{ img }}" style="width: 64px; height: 64px" class="img-circle">
+    <p>
+      Remaining: € {{ budgetSelected }}
+    </p>
+    <div class="list">
+      <div class="item item-input-inset">
+        <label class="item-input-wrapper">
+          <input type="number" placeholder="Amount" ng-model="amount">
+        </label>
+        <button class="button button-positive button-large" ng-click="reload(amount)">
+          Submit
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
